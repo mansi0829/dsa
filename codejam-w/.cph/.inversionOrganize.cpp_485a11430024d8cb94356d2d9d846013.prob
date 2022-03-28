@@ -1,0 +1,1 @@
+{"name":"Local: inversionOrganize","url":"d:\\dsa\\codejam-w\\inversionOrganize.cpp","tests":[{"id":1648307850101,"input":"3\n2\nIIOO\nOOOI\nIIII\nOOOI\n1\nIO\nOO\n2\nOIOI\nIOIO\nOIOI\nIOIO\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\dsa\\codejam-w\\inversionOrganize.cpp","group":"local","local":true}

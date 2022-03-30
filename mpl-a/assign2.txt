@@ -1,0 +1,63 @@
+section .data
+	msg: db "Enter a String: "
+	len: equ $-msg
+	
+	msg2: db "Length of a String: "
+	len2: equ $-msg2
+	
+	new: db "",0x0A
+	len3: equ $-new
+
+section .bss
+
+	str: resb 100
+	strlen: resb 20
+
+section .text
+	global main
+	main:
+
+	;displaying Enter a String:
+	mov rax,1
+	mov rdi,1
+	mov rsi,msg
+	mov rdx,len
+	syscall
+
+	;taking string from user
+	mov rax,0
+	mov rdi,0
+	mov rsi,str
+	mov rdx,100
+	syscall
+	
+	sub rax, 1
+	cmp rax,9
+	jbe Next
+	add rax,07
+	Next: add rax,30H
+	mov byte[strlen], al
+
+	;displaying Length of a String:
+	mov rax,01
+	mov rdi,01
+	mov rsi,msg2
+	mov rdx,len2
+	syscall
+
+	;printing length
+	mov rax,1
+	mov rdi,1
+	mov rsi,strlen
+	mov rdx,20
+	syscall
+	
+	mov rax,1
+	mov rdi,1
+	mov rsi,new
+	mov rdx,len3
+	syscall
+
+	mov rax, 60
+	mov rdi,0
+	syscall

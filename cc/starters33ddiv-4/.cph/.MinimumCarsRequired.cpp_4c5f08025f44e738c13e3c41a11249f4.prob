@@ -1,0 +1,1 @@
+{"name":"Local: MinimumCarsRequired","url":"d:\\cf-cc\\cc\\starters33ddiv-4\\MinimumCarsRequired.cpp","tests":[{"id":1649257150891,"input":"4\n4\n2\n7\n98","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\starters33ddiv-4\\MinimumCarsRequired.cpp","group":"local","local":true}

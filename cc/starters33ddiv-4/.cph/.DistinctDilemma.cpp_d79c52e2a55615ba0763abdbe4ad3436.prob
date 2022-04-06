@@ -1,0 +1,1 @@
+{"name":"Local: DistinctDilemma","url":"d:\\cf-cc\\cc\\starters33ddiv-4\\DistinctDilemma.cpp","tests":[{"id":1649259530410,"input":"2\n3\n1 2 4\n4\n1 1 3 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\starters33ddiv-4\\DistinctDilemma.cpp","group":"local","local":true}

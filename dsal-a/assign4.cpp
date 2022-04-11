@@ -1,4 +1,11 @@
-//hash table
+//============================================================================
+// Name        : 21231_A4.cpp
+// Author      : mansi
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
 #include <iostream>
 using namespace std;
 #define size 10
@@ -19,7 +26,7 @@ public:
 class hashing
 {
 
-    node data[20];
+    node data[size];
     string n;
     long int t;
     int  index;
@@ -27,6 +34,7 @@ class hashing
 public:
     hashing()
     {
+    	index=0;
         t = 0;
     }
 
@@ -34,7 +42,6 @@ public:
     {
         return unique_val % size;
     }
-
 
     void create_record_without_replacement( string n,long t)
     {
@@ -46,16 +53,19 @@ public:
 
         int index = hashing_function(t);
 
-        if(data[index].tel =! t){
-        	for (int j = 0; j < size; j++)
+        if(data[index].tel != t){
+        	while(t!=size)
         	    {
         	        if (data[index].tel == 0)
         	        {
         	            data[index].name = n;
+        	            data[index].tel=t;
         	            break;
         	         }
-        	         else
-        	            index = (index + 1) % size;
+        	         else{
+        	        	 index = (index + 1) % size;
+        	         }
+
         	     }
         }
         else{
@@ -165,7 +175,7 @@ public:
         }
     }
 
-    void display_record(string n, long t)
+    void display_record()
     {
         cout << "\n\t \tNAME";
         cout << " \t\tTELEPHONE ";
@@ -207,7 +217,7 @@ int main()
         	break;
 
         case 3: // display
-            s.display_record(n, t);
+            s.display_record();
             cout << "\n";
             break;
 

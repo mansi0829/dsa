@@ -1,0 +1,1 @@
+{"name":"Local: PrimeSum","url":"d:\\cf-cc\\cc\\aprilLong1Div-4\\PrimeSum.cpp","tests":[{"id":1649644365164,"input":"2\n3 6\n3 2","output":"0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\aprilLong1Div-4\\PrimeSum.cpp","group":"local","local":true}

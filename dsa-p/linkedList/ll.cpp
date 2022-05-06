@@ -29,8 +29,8 @@ public:
 int main()
 {
     node ob;
-    node *head = NULL;
-    head->data = 1;
+    // node *head = NULL;
+    // head->data = 1;
     ob.createLL(4);
     ob.createLL(5);
     ob.createLL(8);

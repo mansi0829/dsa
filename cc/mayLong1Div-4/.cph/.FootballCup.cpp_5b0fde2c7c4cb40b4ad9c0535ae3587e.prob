@@ -1,0 +1,1 @@
+{"name":"Local: FootballCup","url":"d:\\cf-cc\\cc\\mayLong1Div-4\\FootballCup.cpp","tests":[{"id":1651840869027,"input":"4\n1 1\n0 1\n0 0\n2 2","output":"YES\nNO\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\mayLong1Div-4\\FootballCup.cpp","group":"local","local":true}

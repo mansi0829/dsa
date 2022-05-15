@@ -1,27 +1,32 @@
 #include <iostream>
 using namespace std;
 
-void flow(int n)
+void flow()
 {
-    int arr[n], count = 0;
-    for (int i = 0; i < n; i++)
+    int litres, maxLitres, rate, time;
+    cin >> litres >> maxLitres >> rate >> time;
+    if (litres + rate * time > maxLitres)
     {
-        cin >> arr[i];
-        if (arr[i] > 1000)
-        {
-            count++;
-        }
+        cout << "overFlow" << endl;
     }
-    cout << count << endl;
+    if (litres + rate * time == maxLitres)
+    {
+        cout << "filled" << endl;
+    }
+    if(litres + rate * time < maxLitres)
+    {
+        cout << "Unfilled" << endl;
+    }
 }
 
 int main()
 {
     // your code goes here
-    int t, n;
+    int t;
+    cin >> t;
     while (t--)
     {
-        cin >> n;
+        flow();
     }
     return 0;
 }

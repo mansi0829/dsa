@@ -2,24 +2,25 @@
 using namespace std;
 void sum(int n, int m)
 {
-    int arr[n], maxInitial = arr[0] + arr[0] + ((arr[0] - arr[0]) % m);
-    int largest[n * n];
-    for (int i = 0; i < n; i++)
+    vector<long> arr(n);
+
+    for (long i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-
-    for (int k = 0; k < n * n; k++)
+    int maxInitial = INT_MIN;
+    sort(arr.begin(), arr.end());
+    maxInitial = arr[n - 1] + arr[n - 1];
+    for (int i = 1; i < n; i++)
     {
-        for (int i = 0; i < n; i++)
+        int largest = arr[i - 1] + arr[i] + ((arr[i - 1] - arr[i] + m) % (m));
+        if (maxInitial < largest)
         {
-            for (int j = 0; j < n; j++)
-            {
-                largest[k] = arr[i] + arr[j] + ((arr[i] - arr[j]) % (m));
-                cout << max(largest[k], largest[k + 1]) << endl;
-            }
+            maxInitial = largest;
         }
     }
+
+    cout << maxInitial << endl;
 }
 int main()
 {

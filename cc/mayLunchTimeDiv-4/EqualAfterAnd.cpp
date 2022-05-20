@@ -4,6 +4,7 @@ using namespace std;
 void anded(int n)
 {
     
+    
 }
 
 int main()

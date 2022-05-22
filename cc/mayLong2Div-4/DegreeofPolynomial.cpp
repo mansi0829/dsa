@@ -1,35 +1,36 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void mansi(int m)
+void mansi(int number)
 {
-    int arr[m];
-    for (int i = 0; i < m; i++)
+    int arr[number], highS = 0;
+    int max = arr[0];
+    for (int i = 0; i < number; i++)
     {
         cin >> arr[i];
     }
-    for (int i = m - 1; i <= 0; i++)
+
+    for (int k = number - 1; k > 0; --k)
     {
-        if (arr[m - 1] == 0)
+        if (arr[k] != 0)
         {
-            cout << i - 2 << endl;
-        }
-        else
-        {
-            cout << i - 1 << endl;
+            highS = k;
+            break;
         }
     }
+
+    cout << highS << endl;
 }
 
 int main()
 {
     // your code goes here
-    int testCases, m;
-    cin >> testCases;
-    while (testCases--)
+    int testcases, number;
+    cin >> testcases;
+    while (testcases--)
     {
-        cin >> m;
-        mansi(m);
+        cin >> number;
+        mansi(number);
     }
     return 0;
 }

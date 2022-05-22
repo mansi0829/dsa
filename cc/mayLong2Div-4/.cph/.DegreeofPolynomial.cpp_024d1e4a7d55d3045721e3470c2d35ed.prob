@@ -1,0 +1,1 @@
+{"name":"Local: DegreeofPolynomial","url":"d:\\cf-cc\\cc\\mayLong2Div-4\\DegreeofPolynomial.cpp","tests":[{"id":1653049239108,"input":"4\n1\n5\n2\n-3 3\n3\n0 0 5\n4\n1 2 4 0","output":"0\n1\n2\n2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\mayLong2Div-4\\DegreeofPolynomial.cpp","group":"local","local":true}

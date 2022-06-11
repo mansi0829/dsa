@@ -1,0 +1,1 @@
+{"name":"Local: WorldArmyvsAliens","url":"d:\\dsa\\codeGladiator\\WorldArmyvsAliens.cpp","tests":[{"id":1654933830708,"input":"19 50\n02 20","output":"22 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\dsa\\codeGladiator\\WorldArmyvsAliens.cpp","group":"local","local":true}

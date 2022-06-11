@@ -1,4 +1,4 @@
-//binary search O(log (base 2) n)
+// binary search O(log (base 2) n)
 
 #include <iostream>
 using namespace std;

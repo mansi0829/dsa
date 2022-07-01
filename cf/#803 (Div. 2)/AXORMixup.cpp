@@ -4,38 +4,33 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-void mansi(int totalIntegers)
-{
-    int arr[totalIntegers];
-    for (int i = 0; i < totalIntegers; i++)
-    {
-        cin >> arr[i];
-    }
-    for (int i = 0; i < totalIntegers; i++)
-    {
-        int *store = &arr[i];
-        int ans = 0;
-        for (int j = 0; j < totalIntegers; j++)
-        {
-            if (&arr[j] != store)
-            {
-                ans ^= arr[j];
-            }
-        }
-        if (arr[i] == ans)
-        {
-            cout << arr[i] << endl;
-            break;
-        }
-    }
-}
+
 int main()
 {
-    int testCases, totalIntegers;
+    int testCases;
     cin >> testCases;
     while (testCases--)
     {
+        int totalIntegers;
         cin >> totalIntegers;
-        mansi(totalIntegers);
+        int A[totalIntegers];
+        for (int i = 0; i < totalIntegers; i++)
+        {
+            cin >> A[i];
+        }
+        for(int i=0;i<totalIntegers;i++){
+	        int z=0;
+	        //cout<<(z^A[i])<<" ";
+	        for(int j=0;j<totalIntegers;j++){
+	           if(j!=i) z= (z^A[j]);
+	           //cout<<z<<" ";
+	        }
+	        //cout<<z<<" ";
+	        if(z == A[i]){
+	            cout<<z<<endl;
+	            break;
+	        }
+	    }
     }
+    return 0;
 }

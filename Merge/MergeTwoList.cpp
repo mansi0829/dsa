@@ -18,14 +18,14 @@ int main()
             c[k++] = b[j++];
         }
     }
-    // for (; i <= m; i++)
-    // {
-    //     c[i] = a[i];
-    // }
-    // for (; i <= n; i++)
-    // {
-    //     c[i] = b[i];
-    // }
+    for (; i < m; i++)
+    {
+        c[k++] = a[i];
+    }
+    for (; j < n; j++)
+    {
+        c[k++] = b[j];
+    }
     for (int i = 0; i < 8; i++)
     {
         cout << c[i] << " ";

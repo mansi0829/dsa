@@ -1,3 +1,6 @@
+// time complexity is O(m+n)
+// 2way merge sort
+// time complexity = O(nlogn)
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -34,3 +37,8 @@ int main()
 }
 
 // fill remaining values of array c with remaining values of array a and b
+
+// merge sort is a recursive sort
+
+// 2 way merge sort is a iterative process using loop
+// two list taken at a time and then merged

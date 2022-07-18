@@ -1,3 +1,6 @@
+// consider arr[mid] =0 arr[mid] =1 arr[mid] =2
+// dutch flag algorithm
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -7,20 +10,22 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];
-    int start = 0, end = n - 1;
-    int mid = (start + end) / 2;
-    while (start <= mid)
+    int start = 0, mid = 0, end = n - 1;
+
+    while (mid <= end)
     {
-        if (arr[start] == 0 && arr[end] == 1)
+        if (arr[mid] == 0)
         {
-            swap(arr[start], arr[end]);
+            swap(arr[start++], arr[mid++]);
         }
-        if (arr[start] == 1 && arr[end] == 2)
+        if (arr[mid] == 1)
         {
-            swap(arr[start], arr[end]);
+            mid++;
         }
-        start++;
-        end--;
+        if (arr[mid] == 2)
+        {
+            swap(arr[mid], arr[end--]);
+        }
     }
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";

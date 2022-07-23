@@ -1,6 +1,8 @@
 // to traverse whole array find min and then
 // place in at very first position possible
-
+// Selection sort
+// time complexity : O(n^2)
+// Auxiliary Space: O(1)
 #include <bits/stdc++.h>
 using namespace std;
 int main()

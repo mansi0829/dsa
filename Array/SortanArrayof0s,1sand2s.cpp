@@ -15,17 +15,11 @@ int main()
     while (mid <= end)
     {
         if (arr[mid] == 0)
-        {
             swap(arr[start++], arr[mid++]);
-        }
         if (arr[mid] == 1)
-        {
             mid++;
-        }
         if (arr[mid] == 2)
-        {
             swap(arr[mid], arr[end--]);
-        }
     }
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";

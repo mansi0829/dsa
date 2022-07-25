@@ -6,8 +6,7 @@ int main()
     int n;
     cin >> n;
     int arr[n]; // if the arr[n] is declared before then it gets the garbage value of n
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
 
@@ -19,15 +18,13 @@ int main()
 
     // to swap the first and last element increasing and decreasing till mid resptively
     int start = 0, end = n - 1;
-    while (start <= end)
-    {
+    while (start <= end) {
         swap(arr[start], arr[end]);
         start += 1;
         end -= 1;
     }
     int i = 0;
-    while (i != n)
-    {
+    while (i != n) {
         cout << arr[i++] << " ";
     }
     return 0;

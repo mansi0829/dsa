@@ -1,27 +1,53 @@
 // Leetcode : 217 Contains Duplicate
-// error : i am checking a number with itself as well so it showing true 
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cin >> n;
+//     int arr[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+//     sort(arr, arr + n);
+//     for (int i = 0; i < n - 1; i++)
+//     {
+//         if (arr[i] == arr[i + 1])
+//         {
+//             cout << "true";
+//         }
+//     }
+//     cout << "false";
+//     return 0;
+// }
+
+// using hashmap
 #include <bits/stdc++.h>
 using namespace std;
-int main() {
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0; i<n; i++) {
-        cin>>arr[i];
-    }
-    int j=0;
-    for(int i=0; i<n; i++) {
-        if(arr[i]==arr[j]) {
-            cout<<"true";
-            break;
+
+int checkDupe(int arr[], int n) {
+    map<int, int> countMap;
+    for (int i = 0; i < n; i++) {
+        if(countMap[arr[i]]) {
+            return true;
         }
-        else {
-            cout<<"false";
-            j++;
-        }
+        countMap[arr[i]]++;
     }
-    return 0;
+    return false;
 }
 
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    checkDupe(arr,n);
 
+    return 0;
+}

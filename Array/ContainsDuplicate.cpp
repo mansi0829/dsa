@@ -27,10 +27,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int checkDupe(int arr[], int n) {
+bool checkDupe(vector<int> &arr, int n)
+{
     map<int, int> countMap;
-    for (int i = 0; i < n; i++) {
-        if(countMap[arr[i]]) {
+    for (int i = 0; i < n; i++)
+    {
+        if (countMap[arr[i]])
+        {
             return true;
         }
         countMap[arr[i]]++;
@@ -40,14 +43,15 @@ int checkDupe(int arr[], int n) {
 
 int main()
 {
-    int n;
+    int n, a;
     cin >> n;
-    int arr[n];
+    vector<int> arr;
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin >> a;
+        arr.push_back(n);
     }
-    checkDupe(arr,n);
+    cout<<checkDupe(arr, n);
 
     return 0;
 }

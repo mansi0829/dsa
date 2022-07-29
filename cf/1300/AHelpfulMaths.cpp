@@ -1,30 +1,24 @@
+// approach : create a new string 
+
 #include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    string maths, new_stor;
-    cin >> maths;
-    int n = maths.length();
-    int i = 0;
-    while (i < n)
-    {
-
-        if (maths[i] != '+')
-        {
-            new_stor.push_back(maths[i]);
-        }
-        i += 1;
+int main() {
+    string storeValue, inputString ;
+    cin>>inputString;
+    for(int i=0; i<inputString.size(); i++) {
+        if(inputString[i]!='+') {
+            storeValue.push_back(inputString[i]);
+        }    
     }
-    sort(new_stor.begin(), new_stor.end());
-    cout << new_stor[0];
-    int j = 1;
-    while (j < new_stor.length())
-    {
-        cout << "+" << new_stor[j];
-        j += 1;
+    sort(storeValue.begin(), storeValue.end());
+    cout<<storeValue[0];
+    for(int i=1; i<storeValue.size(); i++) {
+        cout<<"+"<<storeValue[i];
     }
+    
     return 0;
 }
+
 
 // #include <bits/stdc++.h>
 // using namespace std;

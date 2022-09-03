@@ -10,13 +10,14 @@ int main()
     {
         cin >> st;
     }
-    for (int i = 0; i < n; i++)
+    while (t--)
     {
-        for (int j = 0; j < t; j++)
+        for (int i = 0; i < n; i++)
         {
-            if (st[i] == 'B' && st[i + 1] == 'G')
+            if (st[i] == 'G' && st[i - 1] == 'B')
             {
-                swap(st[i], st[i + 1]);
+                swap(st[i], st[i - 1]);
+                i++;
             }
         }
     }

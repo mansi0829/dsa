@@ -1,1 +1,0 @@
-{"name":"Local: GoodQualityBulbs","url":"d:\\cf-cc\\cc\\starters34dDiv-4\\GoodQualityBulbs.cpp","tests":[{"id":1649866720273,"input":"3\n3 4\n1 5\n4 2\n5 8 6\n3 1000\n0 0","output":"6\n0\n3000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\starters34dDiv-4\\GoodQualityBulbs.cpp","group":"local","local":true}

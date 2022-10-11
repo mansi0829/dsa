@@ -1,1 +1,0 @@
-{"name":"Local: DominantArmy","url":"d:\\cf-cc\\cc\\starters38dDiv-4\\DominantArmy.cpp","tests":[{"id":1652286216584,"input":"4\n15 5 6\n12 13 16\n1 1 100\n10 10 20","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\starters38dDiv-4\\DominantArmy.cpp","group":"local","local":true}

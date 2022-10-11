@@ -1,1 +1,0 @@
-{"name":"Local: ScoreHigh","url":"d:\\cf-cc\\cc\\mayLong2Div-4\\ScoreHigh.cpp","tests":[{"id":1653070248895,"input":"2\n5\n0 0 5 0\n10\n7 1 1 1","output":"5\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\mayLong2Div-4\\ScoreHigh.cpp","group":"local","local":true}

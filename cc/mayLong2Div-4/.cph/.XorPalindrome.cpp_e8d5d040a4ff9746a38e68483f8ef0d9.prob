@@ -1,1 +1,0 @@
-{"name":"Local: XorPalindrome","url":"d:\\cf-cc\\cc\\mayLong2Div-4\\XorPalindrome.cpp","tests":[{"id":1653231300077,"input":"2\n5\n11011\n7\n0111010\n","output":"0\n1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\cf-cc\\cc\\mayLong2Div-4\\XorPalindrome.cpp","group":"local","local":true}

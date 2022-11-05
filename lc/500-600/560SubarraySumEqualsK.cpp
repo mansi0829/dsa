@@ -16,7 +16,6 @@
 //                     // cout << nums[k];
 //                     sum = sum + nums[k];
 //                 }
-//                 if (sum == k)
 //                 {
 //                     count++;
 //                 }
